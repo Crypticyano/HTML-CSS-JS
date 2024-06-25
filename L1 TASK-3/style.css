@@ -1,0 +1,87 @@
+  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+   font-weight: bold;
+    font-family: 'Teko', sans-serif;
+    --color: #FCFFE7;
+    --color2: #460346;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+      100deg,
+      var(--color) 5%,
+      var(--color2) 99%
+    );
+    font-size: 40px;
+  }
+  label {
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight:300;
+  }
+  input {
+    margin: 46px 20px 0px;
+padding: 12px;
+font-size: 25px;
+
+  }
+  .result {
+    margin: 10px 0 50px;
+    font-size: 35px;
+    color: rgb(255, 34, 34);
+    letter-spacing: 3px;
+    height: 1.5em;
+    font-weight: bold;
+  }
+  
+  button {
+    width: 250px;
+    margin: 0 35px;
+    padding: 15px 35px;
+    background: none;
+    border: 2px solid aquamarine;
+    border-radius: 35px;
+    color: black;
+    font-size: 35px;
+    transition: color 0.5s, box-shadow 0.5s;
+    box-shadow: 5px 5px 15px var(--color);
+    text-transform: uppercase;
+    cursor:pointer;
+  }
+  button:hover {
+    color: var(--color);
+    box-shadow: 5px 5px 15px gold;
+  }
+  
+  @media screen and (max-width: 500px){ 
+    label{
+      font-size: 55px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    button {
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .footer{
+    margin-top: 330px;
+background: aliceblue;
+width: 100vw;
+text-align: center;
+font-size: 25px;
+color: black
+  }
